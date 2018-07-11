@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: 'Dayton';
+	src: url('../fonts/____Dayton_Font_by_connecttohuman_x.ttf');
+}
+
+@font-face {
+	font-family: 'NanumBarun';
+	src: url('../fonts/NanumBarunGothic.ttf');
+}
+
+@font-face {
+	font-family: 'NanumBarunBold';
+	src: url('../fonts/NanumBarunGothicBold.ttf');
+}
+
+#logo{
+	font-family: Dayton;
+}
+
+#titleBar .title{
+	font-family: Dayton;
+}
+
+#nav ul li{
+	font-family: NanumBarun;
+}
+
+#navPanel{
+	font-family: NanumBarun;
+}
+
+.major h2{
+	font-family: NanumBarunBold;
+}
+
+.major p{
+	font-family: NanumBarunBold;
+}

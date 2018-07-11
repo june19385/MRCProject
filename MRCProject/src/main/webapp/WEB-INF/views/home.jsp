@@ -1,334 +1,307 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page session="false"%>
+
+<!-- 한글 인코딩 -->
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
-<html lang="en">
-
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 <head>
-
-<meta charset="utf-8">
+<title>Arcana by HTML5 UP</title>
+<meta charset="utf-8" />
 <meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="">
-<meta name="author" content="">
-
-<title>Modern Business - Start Bootstrap Template</title>
-
-<!-- Bootstrap core CSS -->
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/vendor/bootstrap/css/bootstrap.min.css">
-
-<!-- Custom styles for this template -->
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/modern-business.css">
-
+	content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/resources/assets/css/main.css" />
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/resources/assets/css/corpLogo.css" />
 </head>
+<body class="is-preload">
+	<div id="page-wrapper">
 
-<body>
+		<!-- Header -->
+		<div id="header">
 
-	<!-- Navigation -->
-	<nav
-		class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-		<div class="container">
-			<a class="navbar-brand" href="localhost:8080/">MRCj</a>
-			<button class="navbar-toggler navbar-toggler-right" type="button"
-				data-toggle="collapse" data-target="#navbarResponsive"
-				aria-controls="navbarResponsive" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a class="nav-link" href="about.html">About</a>
-					</li>
-					<li class="nav-item"><a class="nav-link" href="services.html">Services</a>
-					</li>
-					<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a>
-					</li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#"
-						id="navbarDropdownPortfolio" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false"> Portfolio </a>
-						<div class="dropdown-menu dropdown-menu-right"
-							aria-labelledby="navbarDropdownPortfolio">
-							<a class="dropdown-item" href="portfolio-1-col.html">1 Column
-								Portfolio</a> <a class="dropdown-item" href="portfolio-2-col.html">2
-								Column Portfolio</a> <a class="dropdown-item"
-								href="portfolio-3-col.html">3 Column Portfolio</a> <a
-								class="dropdown-item" href="portfolio-4-col.html">4 Column
-								Portfolio</a> <a class="dropdown-item" href="portfolio-item.html">Single
-								Portfolio Item</a>
-						</div></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Blog </a>
-						<div class="dropdown-menu dropdown-menu-right"
-							aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-							<a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-							<a class="dropdown-item" href="blog-post.html">Blog Post</a>
-						</div></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Other Pages </a>
-						<div class="dropdown-menu dropdown-menu-right"
-							aria-labelledby="navbarDropdownBlog">
-							<a class="dropdown-item" href="full-width.html">Full Width
-								Page</a> <a class="dropdown-item" href="sidebar.html">Sidebar
-								Page</a> <a class="dropdown-item" href="faq.html">FAQ</a> <a
-								class="dropdown-item" href="404.html">404</a> <a
-								class="dropdown-item" href="pricing.html">Pricing Table</a>
-						</div></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+			<!-- Logo -->
+			<h1>
+				<a href="localhost:8080" id="logo">MRC<em>orporation</em></a>
+			</h1>
 
-	<header>
-		<div id="carouselExampleIndicators" class="carousel slide"
-			data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0"
-					class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner" role="listbox">
-				<!-- Slide One - Set the background image for this slide in the line below -->
-				<div class="carousel-item active"
-					style="background-image: url('http://placehold.it/1900x1080')">
-					<div class="carousel-caption d-none d-md-block">
-						<h3>First Slide</h3>
-						<p>This is a description for the first slide.</p>
-					</div>
-				</div>
-				<!-- Slide Two - Set the background image for this slide in the line below -->
-				<div class="carousel-item"
-					style="background-image: url('http://placehold.it/1900x1080')">
-					<div class="carousel-caption d-none d-md-block">
-						<h3>Second Slide</h3>
-						<p>This is a description for the second slide.</p>
-					</div>
-				</div>
-				<!-- Slide Three - Set the background image for this slide in the line below -->
-				<div class="carousel-item"
-					style="background-image: url('http://placehold.it/1900x1080')">
-					<div class="carousel-caption d-none d-md-block">
-						<h3>Third Slide</h3>
-						<p>This is a description for the third slide.</p>
-					</div>
-				</div>
-			</div>
-			<a class="carousel-control-prev" href="#carouselExampleIndicators"
-				role="button" data-slide="prev"> <span
-				class="carousel-control-prev-icon" aria-hidden="true"></span> <span
-				class="sr-only">Previous</span>
-			</a> <a class="carousel-control-next" href="#carouselExampleIndicators"
-				role="button" data-slide="next"> <span
-				class="carousel-control-next-icon" aria-hidden="true"></span> <span
-				class="sr-only">Next</span>
-			</a>
-		</div>
-	</header>
-
-	<!-- Page Content -->
-	<div class="container">
-
-		<h1 class="my-4">Welcome to Modern Business</h1>
-
-		<!-- Marketing Icons Section -->
-		<div class="row">
-			<div class="col-lg-4 mb-4">
-				<div class="card h-100">
-					<h4 class="card-header">Card Title</h4>
-					<div class="card-body">
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Sapiente esse necessitatibus neque.</p>
-					</div>
-					<div class="card-footer">
-						<a href="#" class="btn btn-primary">Learn More</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 mb-4">
-				<div class="card h-100">
-					<h4 class="card-header">Card Title</h4>
-					<div class="card-body">
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus
-							commodi similique totam consectetur praesentium molestiae atque
-							exercitationem ut consequuntur, sed eveniet, magni nostrum sint
-							fuga.</p>
-					</div>
-					<div class="card-footer">
-						<a href="#" class="btn btn-primary">Learn More</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 mb-4">
-				<div class="card h-100">
-					<h4 class="card-header">Card Title</h4>
-					<div class="card-body">
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Sapiente esse necessitatibus neque.</p>
-					</div>
-					<div class="card-footer">
-						<a href="#" class="btn btn-primary">Learn More</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /.row -->
-
-		<!-- Portfolio Section -->
-		<h2>Portfolio Heading</h2>
-
-		<div class="row">
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top"
-						src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project One</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Amet numquam aspernatur eum quasi sapiente
-							nesciunt? Voluptatibus sit, repellat sequi itaque deserunt,
-							dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top"
-						src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project Two</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipiscing elit. Nam viverra euismod odio, gravida pellentesque
-							urna varius vitae.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top"
-						src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project Three</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Quos quisquam, error quod sed cumque, odio
-							distinctio velit nostrum temporibus necessitatibus et facere
-							atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top"
-						src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project Four</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipiscing elit. Nam viverra euismod odio, gravida pellentesque
-							urna varius vitae.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top"
-						src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project Five</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipiscing elit. Nam viverra euismod odio, gravida pellentesque
-							urna varius vitae.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top"
-						src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project Six</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Itaque earum nostrum suscipit ducimus nihil
-							provident, perferendis rem illo, voluptate atque, sit eius in
-							voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /.row -->
-
-		<!-- Features Section -->
-		<div class="row">
-			<div class="col-lg-6">
-				<h2>Modern Business Features</h2>
-				<p>The Modern Business template by Start Bootstrap includes:</p>
+			<!-- Nav -->
+			<nav id="nav">
 				<ul>
-					<li><strong>Bootstrap v4</strong></li>
-					<li>jQuery</li>
-					<li>Font Awesome</li>
-					<li>Working contact form with validation</li>
-					<li>Unstyled page elements for easy customization</li>
+					<li class="current"><a href="localhost:8080">Home</a></li>
+					<li><a href="#">회사소개</a>
+						<ul>
+							<li><a href="#">인사말</a></li>
+							<li><a href="#">회사 개요</a></li>
+							<li><a href="#">회사 연혁</a></li>
+							<li><a href="#">목표</a></li>
+							<li><a href="#">조직도</a></li>
+							<li><a href="#">Submenu</a>
+								<ul>
+									<li><a href="#">Lorem dolor</a></li>
+									<li><a href="#">Phasellus magna</a></li>
+									<li><a href="#">Magna phasellus</a></li>
+									<li><a href="#">Etiam nisl</a></li>
+									<li><a href="#">Veroeros feugiat</a></li>
+								</ul></li>
+							<li><a href="#">Veroeros feugiat</a></li>
+						</ul></li>
+					<li><a href="left-sidebar.html">설비 현황</a>
+						<ul>
+							<li><a href="#">조립 교정</a></li>
+							<li><a href="#">기준기</a></li>
+							<li><a href="#">Valve</a></li>
+							<li><a href="#">PCB</a></li>
+							<li><a href="#">Sensor</a></li>
+							<li><a href="#">검사</a></li>
+							<li><a href="#">기타</a></li>
+						</ul></li>
+					<li><a href="right-sidebar.html">제품 소개</a>
+						<ul>
+								<li><a href="#">제품 관련 큰 분류</a></li>
+								<li><a href="#">제품 관련 큰 분류</a></li>
+								<li><a href="#">제품 관련 큰 분류</a></li>
+								<li><a href="#">제품 관련 큰 분류</a></li>
+								<li><a href="#">제품 관련 큰 분류</a></li>
+								<li><a href="#">제품 관련 큰 분류</a></li>
+							</ul></li>
+					<li><a href="two-sidebar.html">오시는길</a></li>
+					<li><a href="no-sidebar.html">인재채용</a></li>
+					<li><a href="no-sidebar.html">사이트맵</a></li>
 				</ul>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Corporis, omnis doloremque non cum id reprehenderit, quisquam totam
-					aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis
-					quia dolorum ducimus unde.</p>
-			</div>
-			<div class="col-lg-6">
-				<img class="img-fluid rounded" src="http://placehold.it/700x450"
-					alt="">
-			</div>
+			</nav>
+
 		</div>
-		<!-- /.row -->
 
-		<hr>
+		<!-- Banner -->
+		<section id="banner">
+			<!--
+			<header>
+				<h2>
+					<em>차별화된 기술로 고객만족을 이끌어내는 기업</em> MRC <em>입니다.</em>
+				</h2>
+				<a href="#" class="button">자세히 보기</a>
+			</header>
+			-->
+		</section>
 
-		<!-- Call to Action Section -->
-		<div class="row mb-4">
-			<div class="col-md-8">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum
-					neque nemo praesentium cum alias asperiores commodi.</p>
+		<!-- Highlights -->
+		<!--
+		<section class="wrapper style1">
+			<div class="container">
+				<div class="row gtr-200">
+					<section class="col-4 col-12-narrower">
+						<div class="box highlight">
+							<i class="icon major fa-paper-plane"></i>
+							<h3>This Is Important</h3>
+							<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
+								dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse
+								eu.</p>
+						</div>
+					</section>
+					<section class="col-4 col-12-narrower">
+						<div class="box highlight">
+							<i class="icon major fa-pencil"></i>
+							<h3>Also Important</h3>
+							<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
+								dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse
+								eu.</p>
+						</div>
+					</section>
+					<section class="col-4 col-12-narrower">
+						<div class="box highlight">
+							<i class="icon major fa-wrench"></i>
+							<h3>Probably Important</h3>
+							<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
+								dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse
+								eu.</p>
+						</div>
+					</section>
+				</div>
 			</div>
-			<div class="col-md-4">
-				<a class="btn btn-lg btn-secondary btn-block" href="#">Call to
-					Action</a>
+		</section>
+	  	-->
+		<!-- Gigantic Heading -->
+		<section class="wrapper style2">
+			<div class="container">
+				<header class="major">
+					<h2>品質은 자신 價格은 겸손</h2>
+					<p>차별화된 기술로 고객만족을 이끌어내는 기업 MRC 입니다.</p>
+				</header>
 			</div>
+		</section>
+
+		<!-- Posts -->
+		<!--
+		<section class="wrapper style1">
+			<div class="container">
+				<div class="row">
+					<section class="col-6 col-12-narrower">
+						<div class="box post">
+							<a href="#" class="image left"><img src="images/pic01.jpg"
+								alt="" /></a>
+							<div class="inner">
+								<h3>The First Thing</h3>
+								<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
+									dapibus nisl amet mattis, sed a rutrum accumsan sed.
+									Suspendisse eu.</p>
+							</div>
+						</div>
+					</section>
+					<section class="col-6 col-12-narrower">
+						<div class="box post">
+							<a href="#" class="image left"><img src="images/pic02.jpg"
+								alt="" /></a>
+							<div class="inner">
+								<h3>The Second Thing</h3>
+								<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
+									dapibus nisl amet mattis, sed a rutrum accumsan sed.
+									Suspendisse eu.</p>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="row">
+					<section class="col-6 col-12-narrower">
+						<div class="box post">
+							<a href="#" class="image left"><img src="images/pic03.jpg"
+								alt="" /></a>
+							<div class="inner">
+								<h3>The Third Thing</h3>
+								<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
+									dapibus nisl amet mattis, sed a rutrum accumsan sed.
+									Suspendisse eu.</p>
+							</div>
+						</div>
+					</section>
+					<section class="col-6 col-12-narrower">
+						<div class="box post">
+							<a href="#" class="image left"><img src="images/pic04.jpg"
+								alt="" /></a>
+							<div class="inner">
+								<h3>The Fourth Thing</h3>
+								<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et
+									dapibus nisl amet mattis, sed a rutrum accumsan sed.
+									Suspendisse eu.</p>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+		-->
+
+		<!-- CTA -->
+		<!--
+		<section id="cta" class="wrapper style3">
+			<div class="container">
+				<header>
+					<h2>Are you ready to continue your quest?</h2>
+					<a href="#" class="button">Insert Coin</a>
+				</header>
+			</div>
+		</section>
+		-->
+
+		<!-- Footer -->
+
+		<div id="footer">
+			<!--
+			<div class="container">
+				<div class="row">
+					<section class="col-3 col-6-narrower col-12-mobilep">
+						<h3>Links to Stuff</h3>
+						<ul class="links">
+							<li><a href="#">Mattis et quis rutrum</a></li>
+							<li><a href="#">Suspendisse amet varius</a></li>
+							<li><a href="#">Sed et dapibus quis</a></li>
+							<li><a href="#">Rutrum accumsan dolor</a></li>
+							<li><a href="#">Mattis rutrum accumsan</a></li>
+							<li><a href="#">Suspendisse varius nibh</a></li>
+							<li><a href="#">Sed et dapibus mattis</a></li>
+						</ul>
+					</section>
+					<section class="col-3 col-6-narrower col-12-mobilep">
+						<h3>More Links to Stuff</h3>
+						<ul class="links">
+							<li><a href="#">Duis neque nisi dapibus</a></li>
+							<li><a href="#">Sed et dapibus quis</a></li>
+							<li><a href="#">Rutrum accumsan sed</a></li>
+							<li><a href="#">Mattis et sed accumsan</a></li>
+							<li><a href="#">Duis neque nisi sed</a></li>
+							<li><a href="#">Sed et dapibus quis</a></li>
+							<li><a href="#">Rutrum amet varius</a></li>
+						</ul>
+					</section>
+					<section class="col-6 col-12-narrower">
+						<h3>Get In Touch</h3>
+						<form>
+							<div class="row gtr-50">
+								<div class="col-6 col-12-mobilep">
+									<input type="text" name="name" id="name" placeholder="Name" />
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<input type="email" name="email" id="email" placeholder="Email" />
+								</div>
+								<div class="col-12">
+									<textarea name="message" id="message" placeholder="Message"
+										rows="5"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" class="button alt"
+											value="Send Message" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+				</div>
+			</div>
+			-->
+
+			<!-- Icons -->
+			<!--  
+			<ul class="icons">
+				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon fa-facebook"><span
+						class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="#" class="icon fa-linkedin"><span
+						class="label">LinkedIn</span></a></li>
+				<li><a href="#" class="icon fa-google-plus"><span
+						class="label">Google+</span></a></li>
+			</ul>
+			-->
+			<!-- Copyright -->
+			<div class="copyright">
+				<ul class="menu">
+					<li>&copy; (주)엠알코퍼레이션. All rights reserved</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+
 		</div>
 
 	</div>
-	<!-- /.container -->
 
-	<!-- Footer -->
-	<footer class="py-5 bg-dark">
-		<div class="container">
-			<p class="m-0 text-center text-white">Copyright &copy; Your
-				Website 2018</p>
-		</div>
-		<!-- /.container -->
-	</footer>
-
-	<!-- Bootstrap core JavaScript -->
-	<script src="<c:url value='/resources/vendor/jquery/jquery.min.js' />"></script>
-	<script src="<c:url value='/resources/vendor/bootstrap/js/bootstrap.bundle.min.js' />"></script>
+	<!-- Scripts -->
+	<script src="<c:url value="/resources/assets/js/jquery.min.js" />"></script>
+	<script
+		src="<c:url value="/resources/assets/js/jquery.dropotron.min.js" />"></script>
+	<script src="<c:url value="/resources/assets/js/browser.min.js" />"></script>
+	<script src="<c:url value="/resources/assets/js/breakpoints.min.js" />"></script>
+	<script src="<c:url value="/resources/assets/js/util.js" />"></script>
+	<script src="<c:url value="/resources/assets/js/main.js" />"></script>
 
 </body>
-
 </html>
 
