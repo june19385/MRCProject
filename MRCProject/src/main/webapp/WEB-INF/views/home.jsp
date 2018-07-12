@@ -13,7 +13,7 @@
 -->
 <html>
 <head>
-<title>Arcana by HTML5 UP</title>
+<title>MRCoporation</title>
 <meta charset="utf-8" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -30,17 +30,17 @@
 
 			<!-- Logo -->
 			<h1>
-				<a href="localhost:8080" id="logo">MRC<em>orporation</em></a>
+				<a href="/" id="logo">MRC<em>orporation</em></a>
 			</h1>
 
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
-					<li class="current"><a href="localhost:8080">Home</a></li>
+					<li class="current"><a href="/">Home</a></li>
 					<li><a href="#">회사소개</a>
 						<ul>
 							<li><a href="#">인사말</a></li>
-							<li><a href="#">회사 개요</a></li>
+							<li><a href="introduce/synopsis">회사 개요</a></li>
 							<li><a href="#">회사 연혁</a></li>
 							<li><a href="#">목표</a></li>
 							<li><a href="#">조직도</a></li>
@@ -75,7 +75,6 @@
 							</ul></li>
 					<li><a href="two-sidebar.html">오시는길</a></li>
 					<li><a href="no-sidebar.html">인재채용</a></li>
-					<li><a href="no-sidebar.html">사이트맵</a></li>
 				</ul>
 			</nav>
 
@@ -301,6 +300,7 @@
 	<script src="<c:url value="/resources/assets/js/breakpoints.min.js" />"></script>
 	<script src="<c:url value="/resources/assets/js/util.js" />"></script>
 	<script src="<c:url value="/resources/assets/js/main.js" />"></script>
+	<script src="<c:url value="/resources/assets/js/temp.js" />"></script>
 
 </body>
 </html>

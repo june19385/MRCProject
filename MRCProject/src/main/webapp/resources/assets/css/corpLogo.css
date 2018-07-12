@@ -2,21 +2,29 @@
 
 @font-face {
 	font-family: 'Dayton';
-	src: url('../fonts/____Dayton_Font_by_connecttohuman_x.ttf');
+	src: url('../fonts/____Dayton_Font_by_connecttohuman_x.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'NanumBarun';
-	src: url('../fonts/NanumBarunGothic.ttf');
+	src: url('../fonts/NanumBarunGothic.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'NanumBarunBold';
-	src: url('../fonts/NanumBarunGothicBold.ttf');
+	src: url('../fonts/NanumBarunGothicBold.ttf') format('truetype');
+}
+
+body{
+	font-family: NanumBarun;
 }
 
 #logo{
 	font-family: Dayton;
+}
+
+#logo a:hover{
+	text-decoration: none;
 }
 
 #titleBar .title{
