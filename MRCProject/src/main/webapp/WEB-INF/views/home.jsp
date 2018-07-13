@@ -41,9 +41,10 @@
 						<ul>
 							<li><a href="#">인사말</a></li>
 							<li><a href="introduce/synopsis">회사 개요</a></li>
-							<li><a href="#">회사 연혁</a></li>
-							<li><a href="#">목표</a></li>
-							<li><a href="#">조직도</a></li>
+							<li><a href="introduce/history">회사 연혁</a></li>
+							<li><a href="introduce/goal">목표</a></li>
+							<li><a href="introduce/corporationchart">조직도</a></li>
+							<!--
 							<li><a href="#">Submenu</a>
 								<ul>
 									<li><a href="#">Lorem dolor</a></li>
@@ -53,6 +54,7 @@
 									<li><a href="#">Veroeros feugiat</a></li>
 								</ul></li>
 							<li><a href="#">Veroeros feugiat</a></li>
+							  -->
 						</ul></li>
 					<li><a href="left-sidebar.html">설비 현황</a>
 						<ul>

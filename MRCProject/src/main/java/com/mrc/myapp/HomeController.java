@@ -42,4 +42,21 @@ public class HomeController {
 		return "introduce/synopsis";
 	}
 	
+	@RequestMapping(value = "/introduce/history", method = RequestMethod.GET)
+	public String history(Locale locale, Model model) {
+		
+		return "introduce/history";
+	}
+	
+	@RequestMapping(value = "/introduce/goal", method = RequestMethod.GET)
+	public String goal(Locale locale, Model model) {
+		
+		return "introduce/goal";
+	}
+	
+	@RequestMapping(value = "/introduce/corporationchart", method = RequestMethod.GET)
+	public String corporationchart(Locale locale, Model model) {
+		
+		return "introduce/corporationchart";
+	}
 }

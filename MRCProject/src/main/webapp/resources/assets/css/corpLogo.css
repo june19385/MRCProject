@@ -2,18 +2,35 @@
 
 @font-face {
 	font-family: 'Dayton';
-	src: url('../fonts/____Dayton_Font_by_connecttohuman_x.ttf') format('truetype');
+	src:url('../fonts/____Dayton_Font_by_connecttohuman_x.eot');
+	src:url('../fonts/____Dayton_Font_by_connecttohuman_x.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/____Dayton_Font_by_connecttohuman_x.woff') format('woff'),
+	url('../fonts/____Dayton_Font_by_connecttohuman_x.ttf') format('truetype'),
+	url('../fonts/____Dayton_Font_by_connecttohuman_x.svg') format('svg');
+	src:local(※), url('../fonts/____Dayton_Font_by_connecttohuman_x.woff') format('woff');
 }
+
 
 @font-face {
 	font-family: 'NanumBarun';
-	src: url('../fonts/NanumBarunGothic.ttf') format('truetype');
+	src:url('../fonts/NanumBarunGothic.eot');
+	src:url('../fonts/NanumBarunGothic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/NanumBarunGothic.woff') format('woff'),
+	url('../fonts/NanumBarunGothic.ttf') format('truetype'),
+	url('../fonts/NanumBarunGothic.svg') format('svg');
+	src:local(※), url('../fonts/NanumBarunGothic.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'NanumBarunBold';
-	src: url('../fonts/NanumBarunGothicBold.ttf') format('truetype');
+	src:url('../fonts/NanumBarunGothicBold.eot');
+	src:url('../fonts/NanumBarunGothicBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/NanumBarunGothicBold.woff') format('woff'),
+	url('../fonts/NanumBarunGothicBold.ttf') format('truetype'),
+	url('../fonts/NanumBarunGothicBold.svg') format('svg');
+	src:local(※), url('../fonts/NanumBarunGothicBold.woff') format('woff');
 }
+
 
 body{
 	font-family: NanumBarun;

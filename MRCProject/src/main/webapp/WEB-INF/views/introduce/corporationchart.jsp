@@ -32,6 +32,9 @@
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/assets/css/semiDetail.css" />
 
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/resources/assets/css/corporationchart.css" />
+
 <!-- Custom styles for this template -->
 
 
@@ -94,7 +97,7 @@
 
 			<!-- Page Heading/Breadcrumbs -->
 			<h1 class="mt-4 mb-3">
-				회사소개&nbsp&nbsp<small>회사 개요</small>
+				회사소개&nbsp&nbsp<small>조직도</small>
 			</h1>
 
 			<ol class="breadcrumb">
@@ -108,64 +111,15 @@
 				<div class="col-lg-3 mb-4">
 					<div class="list-group">
 						<a href="index.html" class="list-group-item">인사말</a> <a
-							href="synopsis" class="list-group-item active">회사 개요</a> <a
+							href="synopsis" class="list-group-item">회사 개요</a> <a
 							href="history" class="list-group-item">회사 연혁</a> <a
 							href="goal" class="list-group-item">목표</a> <a
-							href="corporationchart" class="list-group-item">조직도</a>
+							href="corporationchart" class="list-group-item active">조직도</a>
 					</div>
 				</div>
 				<!-- Content Column -->
 				<div class="col-lg-9 mb-4">
-					<table class="type09">
-						<thead>
-							<tr>
-								<th scope="cols">구분</th>
-								<th scope="cols">내용</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row">회사명</th>
-								<td>(주)엠알코퍼레이션 (MRC社)</td>
-							</tr>
-							<tr>
-								<th scope="row">설립 일자</th>
-								<td>2017年 04月 27日</td>
-							</tr>
-							<tr>
-								<th scope="row">대표 이사</th>
-								<td>박 진 우</td>
-							</tr>
-							<tr>
-								<th scope="row">종업원 수</th>
-								<td>7名(연구소 인력) + 생산라인(아웃소싱)</td>
-							</tr>
-							<tr>
-								<th scope="row">자본금</th>
-								<td>5천만원</td>
-							</tr>
-							<tr>
-								<th scope="row">투자금</th>
-								<td>12억원</td>
-							</tr>
-							<tr>
-								<th scope="row">소재지</th>
-								<td>경기도 의왕시 이미로 40, C동617호(포일동, 인덕원IT밸리)</td>
-							</tr>
-							<tr>
-								<th scope="row">업태</th>
-								<td>제조업, 도매업</td>
-							</tr>
-							<tr>
-								<th scope="row">종목</th>
-								<td>반도체 및 전자부품 제조업, 수출·수입업</td>
-							</tr>
-							<tr>
-								<th scope="row">제조 라인</th>
-								<td>부설연구소 및 제1공장_인덕원IT밸리, 제2공장_동탄 2지구</td>
-							</tr>
-						</tbody>
-					</table>
+					<img src="${pageContext.request.contextPath}/resources/images/Corp_chart.jpg" width="100%" style="display:block; margin-left:auto; margin-right:auto;">
 				</div>
 			</div>
 			<!-- /.row -->
