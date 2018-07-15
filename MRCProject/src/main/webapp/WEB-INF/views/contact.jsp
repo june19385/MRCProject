@@ -15,6 +15,7 @@
 
 <title>MRCoporation</title>
 
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=ZG6z80hKFeWyqMlEEDgb"></script>
 
 
 <!-- Bootstrap core CSS -->
@@ -31,9 +32,11 @@
 
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/assets/css/semiDetail.css" />
-
+	
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/resources/assets/css/corporationchart.css" />
+	href="${pageContext.request.contextPath}/resources/assets/css/contact.css" />
+	
+
 
 <!-- Custom styles for this template -->
 
@@ -57,13 +60,13 @@
 			<nav id="nav">
 			<ul>
 				<li><a href="/">Home</a></li>
-				<li class="current"><a href="#">회사소개</a>
+				<li><a href="#">회사소개</a>
 					<ul>
 						<li><a href="#">인사말</a></li>
-						<li><a href="synopsis">회사 개요</a></li>
-						<li><a href="history">회사 연혁</a></li>
-						<li><a href="goal">목표</a></li>
-						<li><a href="corporationchart">조직도</a></li>
+						<li><a href="introduce/synopsis">회사 개요</a></li>
+						<li><a href="introduce/history">회사 연혁</a></li>
+						<li><a href="introduce/goal">목표</a></li>
+						<li><a href="introduce/corporationchart">조직도</a></li>
 					</ul></li>
 				<li><a href="left-sidebar.html">설비 현황</a>
 					<ul>
@@ -84,7 +87,7 @@
 						<li><a href="#">제품 관련 큰 분류</a></li>
 						<li><a href="#">제품 관련 큰 분류</a></li>
 					</ul></li>
-				<li><a href="/contact">오시는길</a></li>
+				<li class="current"><a href="contact">오시는길</a></li>
 				<li><a href="no-sidebar.html">인재채용</a></li>
 			</ul>
 			</nav>
@@ -96,36 +99,74 @@
 		<div class="container">
 
 			<!-- Page Heading/Breadcrumbs -->
-			<h1 class="mt-4 mb-3">
-				회사소개&nbsp&nbsp<small>조직도</small>
-			</h1>
+			<h1 class="mt-4 mb-3">오시는길</h1>
 
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-				<li class="breadcrumb-item active">회사 소개</li>
+				<li class="breadcrumb-item active">오시는길</li>
 			</ol>
-
+			
 			<!-- Content Row -->
 			<div class="row">
-				<!-- Sidebar Column -->
-				<div class="col-lg-3 mb-4">
-					<div class="list-group">
-						<a href="index.html" class="list-group-item">인사말</a> <a
-							href="synopsis" class="list-group-item">회사 개요</a> <a
-							href="history" class="list-group-item">회사 연혁</a> <a
-							href="goal" class="list-group-item">목표</a> <a
-							href="corporationchart" class="list-group-item active">조직도</a>
-					</div>
+				<!-- Map Column -->
+				<div class="col-lg-8 mb-4">
+					<div class ="maps" id="map1"></div>
+						
 				</div>
-				<!-- Content Column -->
-				<div class="col-lg-9 mb-4">
-					<img src="${pageContext.request.contextPath}/resources/images/Corp_chart.jpg" width="100%" style="display:block; margin-left:auto; margin-right:auto;">
+				<!-- Contact Details Column -->
+				<div class="col-lg-4 mb-4">
+					<h3>[제 1 공장] 기업부설 연구소</h3>
+					<p>
+						16006 경기도 의왕시 이미로 40,<br>인덕원IT밸리 C동 617호<br>
+					</p>
+					<p>
+						Tel: (123) 456-7890
+					</p>
+					<p>
+						FAX: (123) 456-7890
+					</p>
+					<p>
+						E-MAIL: <a href="mailto:name@example.com">name@example.com</a>
+					</p>
+					
 				</div>
 			</div>
 			<!-- /.row -->
+			
+			<!-- Content Row -->
+			<!-- 
+			<div class="row">
 
+				<div class="col-lg-8 mb-4">
+					<div class ="maps" id="map2"></div>
+								
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<h3>[제 2 공장] 송도산업 (18년 11월 豫)</h3>
+					<p>
+						16006 경기도 의왕시 이미로 40,<br>인덕원IT밸리 C동 617호<br>
+					</p>
+					<p>
+						Tel: (123) 456-7890
+					</p>
+					<p>
+						FAX: (123) 456-7890
+					</p>
+					<p>
+						E-MAIL: <a href="mailto:name@example.com">name@example.com</a>
+					</p>
+					
+				</div>
+			</div>
+			-->
+			<!-- /.row -->
+			
+			
 		</div>
 		<!-- /.container -->
+
+
 
 		<!-- Footer -->
 
@@ -154,6 +195,7 @@
 	<script src="<c:url value="/resources/assets/js/breakpoints.min.js" />"></script>
 	<script src="<c:url value="/resources/assets/js/util.js" />"></script>
 	<script src="<c:url value="/resources/assets/js/main.js" />"></script>
+	<script src="<c:url value="/resources/assets/js/contact.js" />"></script>
 </body>
 
 </html>

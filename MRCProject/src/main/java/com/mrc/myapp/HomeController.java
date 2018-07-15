@@ -59,4 +59,10 @@ public class HomeController {
 		
 		return "introduce/corporationchart";
 	}
+	
+	@RequestMapping(value = "/contact", method = RequestMethod.GET)
+	public String contact(Locale locale, Model model) {
+		
+		return "contact";
+	}
 }

@@ -75,7 +75,7 @@
 								<li><a href="#">제품 관련 큰 분류</a></li>
 								<li><a href="#">제품 관련 큰 분류</a></li>
 							</ul></li>
-					<li><a href="two-sidebar.html">오시는길</a></li>
+					<li><a href="contact">오시는길</a></li>
 					<li><a href="no-sidebar.html">인재채용</a></li>
 				</ul>
 			</nav>
