@@ -2,5 +2,11 @@
 
 .maps{
 	width:100%;
-	height:400px;
+	height:500px;
+}
+
+@media screen and (max-width: 736px) {
+	.maps{
+		height:400px;
+	}
 }
