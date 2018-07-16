@@ -89,3 +89,9 @@ table.type09 td {
     vertical-align: top;
     border-bottom: 1px solid #ccc;
 }
+
+@media screen and (max-width: 736px) {
+	.mt-4 ,.mb-3{
+		font-size: 1.5rem;
+	}
+}
