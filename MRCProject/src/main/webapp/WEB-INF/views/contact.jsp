@@ -120,13 +120,13 @@
 						16006 경기도 의왕시 이미로 40,<br>인덕원IT밸리 C동 617호<br>
 					</p>
 					<p>
-						Tel: (123) 456-7890
+						Tel: 031) 348-0855
 					</p>
 					<p>
-						FAX: (123) 456-7890
+						FAX: 031) 348-0041
 					</p>
 					<p>
-						E-MAIL: <a href="mailto:name@example.com">name@example.com</a>
+						E-MAIL: <a href="mailto:mrc9089@nate.com">mrc9089@nate.com</a>
 					</p>
 					
 				</div>
