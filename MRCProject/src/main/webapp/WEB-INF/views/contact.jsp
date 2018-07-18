@@ -34,7 +34,7 @@
 	href="${pageContext.request.contextPath}/resources/assets/css/semiDetail.css" />
 	
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/resources/assets/css/contact.css" />
+	href="${pageContext.request.contextPath}/resources/assets/css/right-sidebar.css" />
 	
 
 

@@ -45,7 +45,7 @@
 							<li><a href="introduce/goal">목표</a></li>
 							<li><a href="introduce/corporationchart">조직도</a></li>
 							<!--
-							<li><a href="#">Submenu</a>
+							< li><a href="#">Submenu</a>
 								<ul>
 									<li><a href="#">Lorem dolor</a></li>
 									<li><a href="#">Phasellus magna</a></li>
