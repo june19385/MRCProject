@@ -1,1 +1,45 @@
 @charset "UTF-8";
+#contentwrapper{
+	padding: 0;	
+}
+
+#contentwrapper hr{
+	margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#contentwrapper .col-lg-9{
+	display:flex;
+	flex-wrap: wrap;
+	max-width:100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#contentwrapper .mb-4{
+	display:flex;
+	flex-wrap: wrap;
+	max-width:100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+
+.col-md-5 h3{
+	font-size : 1.5rem;
+	margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.col-md-5 p{
+    margin-bottom: 1rem;
+}
+

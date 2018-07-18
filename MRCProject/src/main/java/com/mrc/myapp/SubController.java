@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class SubController {
-	@RequestMapping(value = "product", method = RequestMethod.GET)
+	@RequestMapping(value = "/products/product", method = RequestMethod.GET)
 	public String product(Locale locale, Model model) {
 		
-		return "product";
+		return "products/product";
 	}
 
 }
