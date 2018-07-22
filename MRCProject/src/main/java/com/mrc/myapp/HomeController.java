@@ -65,4 +65,10 @@ public class HomeController {
 		
 		return "contact";
 	}
+	
+	@RequestMapping(value = "/recruit", method = RequestMethod.GET)
+	public String recruit(Locale locale, Model model) {
+		
+		return "recruit";
+	}
 }

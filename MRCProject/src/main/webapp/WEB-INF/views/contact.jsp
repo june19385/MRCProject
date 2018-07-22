@@ -88,7 +88,7 @@
 						<li><a href="#">제품 관련 큰 분류</a></li>
 					</ul></li>
 				<li class="current"><a href="contact">오시는길</a></li>
-				<li><a href="no-sidebar.html">인재채용</a></li>
+				<li><a href="recruit">인재채용</a></li>
 			</ul>
 			</nav>
 
@@ -199,4 +199,3 @@
 </body>
 
 </html>
->>>>>>> branch 'master' of https://github.com/june19385/MRCProject/

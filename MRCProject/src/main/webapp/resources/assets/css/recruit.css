@@ -1,0 +1,270 @@
+@CHARSET "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,500|Raleway:400,700,400italic,700italic);
+#banner {
+	background-image: url("../../images/recruit.jpg");
+	background-position: center center;
+	background-size: cover;
+	height: 28em;
+	text-align: center;
+	position: relative;
+}
+
+.col-4{
+    flex: none;
+    max-width: 100%;
+}
+
+.header{
+	text-align:center;
+	padding-bottom:1.5em;
+}
+
+.header h2{
+	margin-bottom:0;
+}
+
+.header h5{
+	font-weight:500;
+	color:#999999;
+}
+
+@media screen and (max-width: 736px){
+	.wrapper {
+    	padding: 2em 0 2em 0;
+	}
+}
+
+#chartwrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80em;
+}
+
+#chartcontainer {
+	padding-bottom: 1em;
+    width: 100%;
+}
+
+.style2 .container{
+	background-color:transparent;
+}
+
+
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    margin: 1em 0;
+}
+
+ol.process-chart {
+    color: #000;
+    counter-reset: item;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+
+ol.process-chart > li,
+ol.process-chart > li > div {
+    position: relative;
+}
+
+ol.process-chart > li {
+    background: linear-gradient(to right, rgba(0,0,0,0.25) 0%, transparent 25%);
+    background-color: #fff;
+    counter-increment: item;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: 1em 1em 1em -1em;
+    min-width: 11.25em;
+    padding: 1em 1em 1em 2em;
+}
+
+ol.process-chart > li:before,
+ol.process-chart > li > div:before {
+    color: rgba(0,0,0,0.75);
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+ol.process-chart > li:before {
+    content: 'Step';
+    display: inline-block;
+    font-weight: 300;
+    left: 2em;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 1em;
+    transform: rotate(90deg);
+    transform-origin: 25% 50%;
+}
+
+ol.process-chart > li:after {
+    border-bottom: 1em solid transparent;
+    border-left: 1em solid #fff;
+    border-right: 0 solid transparent;
+    border-top: 1em solid transparent;
+    content: '';
+    height: 100%;
+    position: absolute;
+    right: -1em;
+    top: 0;
+    width: 0;
+    z-index: 1;
+}
+ol.process-chart > li > div > h2{
+	font-size:1.5em;
+}
+ol.process-chart > li > div {
+    padding: 0 0 0 1em;
+}
+
+ol.process-chart > li > div:before {
+    content: counter(item, decimal-leading-zero);
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1;
+}
+
+/*** PRIMARY ***/
+ol.process-chart > li:nth-of-type(6n+1) {
+    background-color: #a2ed56;
+}
+
+ol.process-chart > li:nth-of-type(6n+1):after {
+    border-left-color: #a2ed56;
+}
+
+/*** SECONDARY ***/
+ol.process-chart > li:nth-of-type(6n+2) {
+    background-color: #83e4e2;
+}
+
+ol.process-chart > li:nth-of-type(6n+2):after {
+    border-left-color: #83e4e2;
+}
+
+/*** TERTIARY ***/
+ol.process-chart > li:nth-of-type(6n+3) {
+    background-color: #fd6470;
+}
+
+ol.process-chart > li:nth-of-type(6n+3):after {
+    border-left-color: #fd6470;
+}
+
+/*** QUATERNARY ***/
+ol.process-chart > li:nth-of-type(6n+4) {
+    background-color: #fca858;
+}
+
+ol.process-chart > li:nth-of-type(6n+4):after {
+    border-left-color: #fca858;
+}
+
+/*** QUINARY ***/
+ol.process-chart > li:nth-of-type(6n+5) {
+    background-color: #fddc32;
+}
+
+ol.process-chart > li:nth-of-type(6n+5):after {
+    border-left-color: #fddc32;
+}
+
+/*** MEDIA QUERIES ***/
+@media only screen and ( max-width: 40em ) {
+
+    ol.process-chart {
+        margin: 1em 0 0 0;
+        padding: 1em 0 0 0;
+        display: block;
+    }
+
+    ol.process-chart > li {
+        background: linear-gradient(rgba(0,0,0,0.25) 0%, transparent 25%);
+        flex-basis: inherit;
+        margin: -1em 0 1em 0;
+        min-width: inherit;
+        padding: 1em 1em 0 1em;
+    }
+
+    ol.process-chart > li:before {
+        left: 1em;
+        top: 2em;
+    }
+
+    ol.process-chart > li:after {
+        border-bottom: 0 solid transparent;
+        border-left: 1em solid transparent!important;
+        border-right: 1em solid transparent;
+        border-top: 1em solid #fff;
+        bottom: -1em;
+        height: 0;
+        left: 0;
+        right: inherit;
+        top: inherit;
+        width: 100%;
+    }
+
+    ol.process-chart > li > div {
+        padding: 1em 1em 0 1em;
+    }
+
+    /*** PRIMARY ***/
+    ol.process-chart > li:nth-of-type(6n+1):after {
+        border-top-color: #a2ed56;
+    }
+
+    /*** SECONDARY ***/
+    ol.process-chart > li:nth-of-type(6n+2):after {
+        border-top-color: #83e4e2;
+    }
+
+    /*** TERTIARY ***/
+    ol.process-chart > li:nth-of-type(6n+3):after {
+        border-top-color: #fd6470;
+    }
+
+    /*** QUATERNARY ***/
+    ol.process-chart > li:nth-of-type(6n+4):after {
+        border-top-color: #fca858;
+    }
+
+    /*** QUINARY ***/
+    ol.process-chart > li:nth-of-type(6n+5):after {
+        border-top-color: #fddc32;
+    }
+
+}
+
+#processcontent{
+	display:inline-block;
+}
+#processcontent > h3{
+	margin-bottom:0;
+}
+#processcontent > ul{
+	list-style:disc;
+}
+
+#processcontent > dl{
+	margin: 1em 0;
+}
+
+#processcontent > dl > dt{
+	margin: .5em 0;
+}
+
+#processcontent > dl > dd{
+	margin-left: 1em;
+	padding-left: .5em;
+	display: list-item;
+    list-style-type: disc;
+    
+}
