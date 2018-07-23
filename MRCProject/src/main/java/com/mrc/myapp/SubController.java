@@ -9,34 +9,47 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class SubController {
-	@RequestMapping(value = "/products/product1", method = RequestMethod.GET)
-	public String product1(Locale locale, Model model) {
+	@RequestMapping(value = "/equipments/equipment", method = RequestMethod.GET)
+	public String equipment(Locale locale, Model model) {
 		
-		return "products/product1";
+		return "equipments/equipment";
 	}
 	
-	@RequestMapping(value = "/products/product2", method = RequestMethod.GET)
-	public String product2(Locale locale, Model model) {
+	@RequestMapping(value = "/equipments/standard", method = RequestMethod.GET)
+	public String standard(Locale locale, Model model) {
 		
-		return "products/product2";
+		return "equipments/standard";
 	}
 	
-	@RequestMapping(value = "/products/product3", method = RequestMethod.GET)
-	public String product3(Locale locale, Model model) {
+	@RequestMapping(value = "/equipments/valve", method = RequestMethod.GET)
+	public String valve(Locale locale, Model model) {
 		
-		return "products/product3";
+		return "equipments/valve";
 	}
 	
-	@RequestMapping(value = "/products/product4", method = RequestMethod.GET)
-	public String product4(Locale locale, Model model) {
+	@RequestMapping(value = "/equipments/pcb", method = RequestMethod.GET)
+	public String pcb(Locale locale, Model model) {
 		
-		return "products/product4";
+		return "equipments/pcb";
 	}
 	
-	@RequestMapping(value = "/products/product5", method = RequestMethod.GET)
-	public String product5(Locale locale, Model model) {
+	@RequestMapping(value = "/equipments/sensor", method = RequestMethod.GET)
+	public String sensor(Locale locale, Model model) {
 		
-		return "products/product5";
+		return "equipments/sensor";
 	}
+	
+	@RequestMapping(value = "/equipments/inspection", method = RequestMethod.GET)
+	public String inspection(Locale locale, Model model) {
+		
+		return "equipments/inspection";
+	}
+	
+	@RequestMapping(value = "/equipments/others", method = RequestMethod.GET)
+	public String others(Locale locale, Model model) {
+		
+		return "equipments/others";
+	}
+
 
 }
