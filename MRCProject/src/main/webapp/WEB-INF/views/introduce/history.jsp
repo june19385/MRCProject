@@ -50,20 +50,20 @@
 
 			<!-- Logo -->
 			<h1>
-				<a href="/" id="logo">MRC<em>orporation</em></a>
+				<a href="${pageContext.request.contextPath}/" id="logo">MRC<em>orporation</em></a>
 			</h1>
 
 			<!-- Nav -->
 			<nav id="nav">
 			<ul>
-				<li><a href="/">Home</a></li>
+				<li><a href="${pageContext.request.contextPath}/">Home</a></li>
 				<li class="current"><a href="#">회사소개</a>
 					<ul>
 						<li><a href="#">인사말</a></li>
-						<li><a href="synopsis">회사 개요</a></li>
-						<li><a href="history">회사 연혁</a></li>
-						<li><a href="goal">목표</a></li>
-						<li><a href="corporationchart">조직도</a></li>
+						<li><a href="${pageContext.request.contextPath}/introduce/synopsis">회사 개요</a></li>
+						<li><a href="${pageContext.request.contextPath}/introduce/history">회사 연혁</a></li>
+						<li><a href="${pageContext.request.contextPath}/introduce/goal">목표</a></li>
+						<li><a href="${pageContext.request.contextPath}/introduce/corporationchart">조직도</a></li>
 					</ul></li>
 				<li><a href="left-sidebar.html">설비 현황</a>
 					<ul>
@@ -84,8 +84,8 @@
 						<li><a href="#">제품 관련 큰 분류</a></li>
 						<li><a href="#">제품 관련 큰 분류</a></li>
 					</ul></li>
-				<li><a href="/contact">오시는길</a></li>
-				<li><a href="/recruit">인재채용</a></li>
+				<li><a href="${pageContext.request.contextPath}/contact">오시는길</a></li>
+				<li><a href="${pageContext.request.contextPath}/recruit">인재채용</a></li>
 			</ul>
 			</nav>
 
@@ -111,10 +111,10 @@
 				<div class="col-lg-3 mb-4">
 					<div class="list-group">
 						<a href="index.html" class="list-group-item">인사말</a> <a
-							href="synopsis" class="list-group-item">회사 개요</a> <a
-							href="history" class="list-group-item active">회사 연혁</a> <a
-							href="goal" class="list-group-item">목표</a> <a
-							href="corporationchart" class="list-group-item">조직도</a>
+							href="${pageContext.request.contextPath}/introduce/synopsis" class="list-group-item">회사 개요</a> <a
+							href="${pageContext.request.contextPath}/introduce/history" class="list-group-item active">회사 연혁</a> <a
+							href="${pageContext.request.contextPath}/introduce/goal" class="list-group-item">목표</a> <a
+							href="${pageContext.request.contextPath}/introduce/corporationchart" class="list-group-item">조직도</a>
 					</div>
 				</div>
 				<!-- Content Column -->

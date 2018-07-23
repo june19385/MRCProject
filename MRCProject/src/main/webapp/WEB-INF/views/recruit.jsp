@@ -84,14 +84,14 @@ DEALINGS IN THE SOFTWARE.
 			<!-- Nav -->
 			<nav id="nav">
 			<ul>
-				<li><a href="/">Home</a></li>
+				<li><a href="${pageContext.request.contextPath}/">Home</a></li>
 				<li><a href="#">회사소개</a>
 					<ul>
 						<li><a href="#">인사말</a></li>
-						<li><a href="introduce/synopsis">회사 개요</a></li>
-						<li><a href="introduce/history">회사 연혁</a></li>
-						<li><a href="introduce/goal">목표</a></li>
-						<li><a href="introduce/corporationchart">조직도</a></li>
+						<li><a href="${pageContext.request.contextPath}/introduce/synopsis">회사 개요</a></li>
+						<li><a href="${pageContext.request.contextPath}/introduce/history">회사 연혁</a></li>
+						<li><a href="${pageContext.request.contextPath}/introduce/goal">목표</a></li>
+						<li><a href="${pageContext.request.contextPath}/introduce/corporationchart">조직도</a></li>
 					</ul></li>
 				<li><a href="left-sidebar.html">설비 현황</a>
 					<ul>
@@ -112,8 +112,8 @@ DEALINGS IN THE SOFTWARE.
 						<li><a href="#">제품 관련 큰 분류</a></li>
 						<li><a href="#">제품 관련 큰 분류</a></li>
 					</ul></li>
-				<li><a href="contact">오시는길</a></li>
-				<li class="current"><a href="recruit">인재채용</a></li>
+				<li><a href="${pageContext.request.contextPath}/contact">오시는길</a></li>
+				<li class="current"><a href="${pageContext.request.contextPath}/recruit">인재채용</a></li>
 			</ul>
 			</nav>
 
@@ -232,12 +232,12 @@ DEALINGS IN THE SOFTWARE.
 				<h3>지원 방법</h3>
 				<ul>
 					<li><a href="${pageContext.request.contextPath}/resources/file/mrc_resume.hwp" download>이곳</a>에서 지원서 양식을 받은 후 지원서를 작성합니다.</li>
-					<li>지원서를 작성한 후 파일 이름을 지원자명_이력서.hwp로 변경후 채용담당자 메일(nate9089@nate.com)로 제출하시면 됩니다.</li>
+					<li>지원서를 작성한 후 파일 이름을 지원자명_이력서.hwp로 변경후 채용담당자 메일(mrc9089@nate.com)로 제출하시면 됩니다.</li>
 				</ul>
 				<h3>채용 절차</h3>
 				<dl>
 					<dt><strong>1.&nbsp&nbsp&nbsp지원서 접수</strong></dt>
-					<dd>채용담당자 메일(nate9089@nate.com)로 접수</dd>
+					<dd>채용담당자 메일(mrc9089@nate.com)로 접수</dd>
 					<dt><strong>2.&nbsp&nbsp&nbsp서류전형</strong></dt>
 					<dd>제출하신 지원서를 바탕으로 학력사항, 어학능력 등을 검토하여 직무연관성을 종합적으로 판단합니다.</dd>
 					<dd>직무에 적합하다고 판단되는 분들께는 지원서에 작성된 연락처, 이메일을 통해 다음 전형에 대한 안내가 이루어집니다.</dd>
