@@ -106,10 +106,11 @@
 				<!-- Sidebar Column -->
 				<div class="col-lg-3 mb-4">
 					<div class="list-group">
-						<a class="list-group-item">제품1</a> <a class="list-group-item">제품2</a>
-						<a class="list-group-item active">제품3</a> <a
-							class="list-group-item">제품4</a> <a
-							corporationchart" class="list-group-item">제품5</a>
+						<a href="product1" class="list-group-item">제품1</a> 
+						<a href="product2" class="list-group-item">제품2</a>
+						<a href="product3" class="list-group-item">제품3</a> 
+						<a href="product4" class="list-group-item active">제품4</a> 
+						<a href="product5" corporationchart" class="list-group-item">제품5</a>
 					</div>
 				</div>
 
@@ -153,11 +154,45 @@
 							</a>
 						</div>
 					</div>
+					
+					<hr>
+					
+					<!-- Content Column -->
+					<div class="col-lg-9 mb-4">
+						<div class="col-md-7">
+							<a href="#"> <img class="img-fluid rounded mb-3 mb-md-0"
+								alt="" src="http://placehold.it/700x300">
+							</a>
+						</div>
+						<div class="col-md-5">
+							<h3>Project One</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Laudantium veniam exercitationem expedita laborum at voluptate.
+								Labore, voluptates totam at aut nemo deserunt rem magni pariatur
+								quos perspiciatis atque eveniet unde.</p>
+							<a class="btn btn-primary" href="#">View Project <span
+								class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
+			<!-- Footer -->
 
+			<div id="footer">
+				<!-- Copyright -->
+				<div class="copyright">
+					<ul class="menu">
+						<li>&copy; (주)엠알코퍼레이션. All rights reserved</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+	
+			</div>
 
 		</div>
+		
+		
 	</div>
 
 	<!-- Bootstrap core JavaScript -->
